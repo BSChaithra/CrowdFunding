@@ -1,0 +1,195 @@
+:root
+{
+    --primary-color: #9a83c2;
+    --secondary-color: #bfb5cf;
+    --button-color: #8c70bd;
+}
+*
+{
+    box-sizing:border-box;
+    margin:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');    
+* {
+  font-family: 'Exo', sans-serif;
+}
+body
+{
+    background-image: linear-gradient(to right, #bfb5cf 0%, #bfb5cf 40%, #9a83c2 100%);
+}
+main
+{
+    background-color: white;
+    margin: 45px 145px;
+    border-radius: 5px;
+    padding: 30px 40px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+nav
+{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+nav a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+header span
+{
+   color: #9a83c2;
+   font-size: 20px;
+   font-weight: 900;
+}
+button
+{
+    background-color: #8c70bd;
+    border-color: #8c70bd;
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer
+}
+.follow:hover
+{
+    background-color: #8c70bd;
+    color: white;
+}
+.login:hover
+{
+   background-color: var(--primary-color);
+}
+.contribute:hover
+{
+    background-color: var(--primary-color);
+}
+.flex-container
+{
+    display: flex;
+    margin: 20px;
+}
+
+.img-container
+{
+   
+    padding: 20px;
+}
+.description-container
+{
+    padding: 20px;
+}
+.description-container p
+{
+    font-size: 13px;
+    padding: 10px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.description-container h1
+{
+    padding: 4px;
+}
+progress
+{
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin-left: 10px;
+    accent-color: #8c70bd;
+}
+.dollar-value
+{
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.percent
+{
+    margin-left: 10px;
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 15px;
+}
+.follow
+{
+    background-color: transparent;
+    color: #8c70bd;
+    border-color: var(--primary-color)
+}
+.days, .patients
+{
+    display: flex;
+    flex-direction: column;
+}
+.img-container img
+{
+    border-radius:25px;
+}
+@media only screen and (max-width: 768px)
+{
+    main 
+    {
+         margin: 15px 15px;
+    }
+    nav
+    {
+        gap: 15px;
+    }
+    nav a 
+    {
+        font-size: 13px;
+    }
+    .img-container img 
+    {
+        width: 300px !important;
+        height: 300px !important
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+    .flex-container
+    {
+        flex-direction: column;
+        align-items:center;
+    }
+    .img-container 
+    {
+        padding: 20px;
+    }
+    .description-container 
+    {
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    main
+    {
+        margin: 20px 60px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1440px)
+{
+    main
+    {
+        margin: 35px 40px;
+    }
+}
