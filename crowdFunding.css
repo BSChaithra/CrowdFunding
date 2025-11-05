@@ -16,6 +16,8 @@
 body
 {
     background-image: linear-gradient(to right, #bfb5cf 0%, #bfb5cf 40%, #9a83c2 100%);
+    display: flex;
+    align-items: center;
 }
 main
 {
@@ -142,6 +144,20 @@ progress
 {
     border-radius:25px;
 }
+
+@media only screen and (max-width: 576px)
+{
+    .grid-container
+    {
+        grid-template-columns: auto auto auto;
+    }
+    nav
+    {
+        flex-direction: column
+    };
+}
+
+
 @media only screen and (max-width: 768px)
 {
     main 
